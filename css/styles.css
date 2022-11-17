@@ -212,7 +212,7 @@ html {
     color: rgb(7, 239, 96);
 }
 
-/*[class^="fa-brands fa-bitcoin"] {
+[class^="fa-brands fa-bitcoin"] {
     font-size: 50px;
     text-align: center;
 }
@@ -225,7 +225,7 @@ html {
 [class^="fa-solid fa-atom"] {
     font-size: 50px;
     text-align: center;
-}*/
+}
 
 .titulo-services {
     margin: 20px 0;
