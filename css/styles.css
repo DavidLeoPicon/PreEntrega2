@@ -206,7 +206,13 @@ html {
     text-align: center;
 }
 
-[class^="fa-brands fa-bitcoin"] {
+.CryptoSize {
+    font-size: 2em;
+    font-style: bold;
+    color: rgb(7, 239, 96);
+}
+
+/*[class^="fa-brands fa-bitcoin"] {
     font-size: 50px;
     text-align: center;
 }
@@ -219,7 +225,7 @@ html {
 [class^="fa-solid fa-atom"] {
     font-size: 50px;
     text-align: center;
-}
+}*/
 
 .titulo-services {
     margin: 20px 0;
@@ -429,7 +435,7 @@ html {
         grid-column: 1/-1;
         grid-row-start: auto;
         justify-self: center;
-        margin-right: 26.20em;
+        margin-right: 2.5em;
       
     }
 
@@ -723,3 +729,22 @@ footer {
 }
 
 }
+
+#davidLP {
+    display: flex;
+    grid-column: 2/12;
+    grid-row-end: auto;
+    justify-self: center;
+    font-size: 1.6em;
+    margin-top: 1.5em;
+}
+
+.pFooter {
+    text-decoration: none;
+    color: aqua;
+}
+
+.pFooter:hover {
+    color: rgb(255, 255, 255);
+}
+
