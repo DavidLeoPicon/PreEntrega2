@@ -93,7 +93,7 @@ html {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 498px) {
     .nav__label{
         display: block;
         cursor: pointer;
@@ -107,7 +107,7 @@ html {
         top: 80px;
         bottom: 0;
         background: rgba(249, 110, 11, 0.537);
-        width: 100%;
+        width: 80%;
         left: 0;
         display: flex;
         justify-content: space-evenly;
@@ -177,6 +177,66 @@ html {
     border-radius: 11%;
 }
 
+@media (max-with: 490px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        width: 90%;
+        max-width: 1700px;
+        height: 100%;
+        margin: auto;
+        gap: 10px;
+        overflow: hidden;
+        align-items: center;
+    }
+    
+    .weight-400 {
+        font-weight: 400;
+    }
+    
+    .weight-600 {
+        font-weight: 600;
+    }
+    
+    .parrafo {
+        margin-bottom: 20px;
+    }
+    
+    .header {
+        height: 500px;
+    }
+    
+    .img-hero {
+        width: 100%;
+        height: auto;
+        grid-column: 8/13;
+    }
+    
+    .img {
+        width: 95%;
+        max-width: 500px;
+    }
+    
+    .textos-hero {
+        grid-column: 2/6;
+        padding-right: 20px;
+    }
+    
+    .textos-hero p {
+        text-align: justify;
+    }
+    
+    .cta {
+        width: 8.125em;
+        background: rgb(28, 7, 47);
+        color: aliceblue;
+        display: inline-block;
+        text-align: center;
+        padding: 11px 0;
+        text-decoration: none;
+        border-radius: 11%;
+    }
+}
 /*----------------*/
 /*------MAIN------*/
 /*----------------*/
@@ -212,7 +272,7 @@ html {
     color: rgb(7, 239, 96);
 }
 
-[class^="fa-brands fa-bitcoin"] {
+/*[class^="fa-brands fa-bitcoin"] {
     font-size: 50px;
     text-align: center;
 }
@@ -225,7 +285,7 @@ html {
 [class^="fa-solid fa-atom"] {
     font-size: 50px;
     text-align: center;
-}
+}*/
 
 .titulo-services {
     margin: 20px 0;
@@ -273,6 +333,15 @@ html {
     text-align: center;
     color: #f9f9fd;
     grid-column: 4/9;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .textosCotizacionCrypto {
+    grid-column: 1/-1;
+    text-align: center;
+    color: #f9f9fd;
+    grid-column: 4/7;
     }
 }
 
@@ -438,6 +507,18 @@ html {
         margin-right: 2.5em;
       
     }
+}
+
+    @media screen and (max-width: 485px) {
+        #carouselExampleCaptions {
+            display: flex;
+            width: 85%;
+            grid-column: 1/-1;
+            grid-row-start: auto;
+            justify-self: center;
+            margin-right: 2.5em;
+          
+        }
 
     .h3s {
         text-align: center;
@@ -653,9 +734,9 @@ html {
     .contact-info p {
         text-align: left;
     }
+}
 
 @media(max-width: 630px) {
-    
     .CabeceraContact {
         display: flex;
         justify-self: center;
@@ -686,9 +767,9 @@ html {
         margin-top: -3em;
     }
 
-    
+}    
 
-}
+
 
 .here {
     padding: 1rem;
@@ -728,7 +809,6 @@ footer {
     grid-column: span 4;
 }
 
-}
 
 #davidLP {
     display: flex;
@@ -748,18 +828,16 @@ footer {
     color: rgb(255, 255, 255);
 }
 
-@media (max-width: 470px;) {
+@media(max-width: 450px) {
 
     #davidLP {
         display: flex;
-        grid-column: 4/8;
+        grid-column: 5/7;
         grid-row-end: auto;
         justify-self: center;
         font-size: 1rem;
         margin-top: 1rem;
     }
-
-
 }
     
 
