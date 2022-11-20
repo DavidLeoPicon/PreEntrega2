@@ -82,7 +82,7 @@ html {
         top: 80px;
         bottom: 0;
         background: rgb(249, 110, 11);
-        width: 100%;
+        width: 75%;
         left: 0;
         display: flex;
         justify-content: space-evenly;
@@ -107,7 +107,7 @@ html {
         top: 80px;
         bottom: 0;
         background: rgb(249, 110, 11);
-        width: 100%;
+        width: 90%;
         left: 0;
         display: flex;
         justify-content: space-evenly;
@@ -116,6 +116,38 @@ html {
         clip-path: circle(0 at center);
         transition: clip-path 1s ease-in-out;   
     }
+}
+
+@media (max-width: 475px) {
+    .nav__label{
+        display: block;
+        cursor: pointer;
+    }
+    .nav__item {
+        color: #f9f9fd;
+    }
+
+    .nav__menu {
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: rgb(249, 110, 11);
+        width: 80%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;   
+    }
+
+    .nav__logo {
+        width: 13em;
+        height: 10.5;
+        margin-left: 4em;
+        margin-bottom: 1em;
+     }
 }
 
 @media (max-with: 490px) {
@@ -159,7 +191,6 @@ html {
     
     .textos-hero {
         grid-column: 2/6;
-        padding-right: 20px;
     }
     
     .textos-hero p {
@@ -535,7 +566,7 @@ html {
     @media screen and (max-width: 485px) {
         #carouselExampleCaptions {
             display: flex;
-            width: 85%;
+            width: 91%;
             grid-column: 1/-1;
             grid-row-start: auto;
             justify-self: center;
@@ -861,6 +892,37 @@ footer {
         font-size: 1rem;
         margin-top: 1rem;
     }
+}
+
+/*AJUSTES FINALES RESPONSIVE*/
+
+@media screen and (max-with: 480px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, min-max( 180px, 1fr));
+    }
+
+    .item {
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .textos-article h3 {
+        margin: 25px ;
+    }
+}
+    
+
+@media screen and (max-with: 400px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, min-max( 180px, 1fr));
+    }
+
+    .item {
+        width: 80%;
+        flex-shrink: 0;
+    }
+
+
 }
     
 
