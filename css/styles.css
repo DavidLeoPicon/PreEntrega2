@@ -190,6 +190,43 @@ html {
 
     .nav__logo {
         display: flex;
+        width: 8.5em;
+        height: 9.5; 
+        margin-left: 2.5em;    
+     }
+
+     .nav__container, .nav__label {
+        margin-right: 2em;
+     }
+
+}
+
+@media screen and (max-width: 412px) {
+    .nav__label{
+        display: block;
+        cursor: pointer;
+    }
+    .nav__item {
+        color: #f9f9fd;
+    }
+
+    .nav__menu {
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: rgb(249, 110, 11);
+        width: 70%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;   
+    }
+
+    .nav__logo {
+        display: flex;
         width: 9.5em;
         height: 10.5; 
         margin-left: 3em;    
@@ -322,17 +359,12 @@ html {
 
 @media screen and (max-width: 444) {
    
-   
-    /*.parrafo {
-        display: grid;
-        text-align: justify;
-        max-width: 30%;
-    }*/
-
     .textos-hero {
         grid-template-columns:auto ;
     }
+
 }
+
 /*----------------*/
 /*------MAIN------*/
 /*----------------*/
@@ -686,6 +718,57 @@ html {
 
     .item {
         width: 63%;
+        margin: 1.7em 0;
+        height: auto;
+        padding: 2.4em;
+    }
+
+    .img-article {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        text-align: center;
+        
+    }
+}
+
+@media screen and (max-width: 460px) {
+   
+    .grid {
+        grid-gap: 22px;        
+    }
+    
+    .img-hero {
+        text-align: center;
+    }
+    
+    .services {
+        height: auto;
+        margin-top: 1.7em;
+    }
+
+    .textosCotizacionCrypto {
+        display: flex;
+        grid-column: 3/10;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-left: 1.2rem;
+    }
+
+    .cryptos, .li {
+        display: block;
+        height: auto;  
+        grid-column: 6/6;
+        
+    }
+
+    .crypto {
+        align-items: center;
+        justify-items: center;
+    }
+
+    .item {
+        width: 63%;
         margin: 2.4em 0;
         height: auto;
         padding: 2.4em;
@@ -695,6 +778,13 @@ html {
         grid-column: 1/-1;
         grid-row: 2/3;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .CryptoSize {
+        font-size: 1.5rem;
     }
 }
 
