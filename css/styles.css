@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -592,6 +594,11 @@ html {
 }
 
 @media screen and (max-width: 540px) {
+    
+    .parrafoH1 {
+        display: none;
+    }
+    
     #carouselExampleCaptions {
         display: flex;
         width: 100%;
@@ -967,8 +974,16 @@ footer {
         grid-template-columns: repeat(auto-fit, min-max( 180px, 1fr));
     }
 
+    .services {
+        padding: -10px;
+    }
+
+    .items {
+        width: 80%;
+    }
+
     .item {
-        width: 100%;
+        width: 55%;
         flex-shrink: 0;
     }
 
@@ -977,18 +992,20 @@ footer {
     }
 
     .parrafoMkt {
-        display: flex;
-        grid-column: 5/9;
+        display: grid;
+        grid-template-columns: 5/7;
         grid-row-end: auto;
         justify-self: center; 
     }
 }
+
+
     
 @media screen and (max-width:440px) {
 
     .parrafoMkt {
-        display: flex;
-        grid-column: 5/9;
+        display: none;
+        grid-template-columns: 5/7;
         grid-row-end: auto;
         justify-self: center; 
     }
@@ -996,13 +1013,13 @@ footer {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
     .grid {
         grid-template-columns: repeat(auto-fit, min-max( 180px, 1fr));
     }
 
     .item {
-        width: 80%;
+        width: 70%;
         flex-shrink: 0;
     }
 }
