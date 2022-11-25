@@ -110,6 +110,7 @@ html {
         bottom: 0;
         background: rgb(249, 110, 11);
         width: 90%;
+        height: 60%;
         left: 0;
         display: flex;
         justify-content: space-evenly;
@@ -142,6 +143,7 @@ html {
         bottom: 0;
         background: rgb(249, 110, 11);
         width: 80%;
+        height: 60%;
         left: 0;
         display: flex;
         justify-content: space-evenly;
@@ -179,6 +181,7 @@ html {
         bottom: 0;
         background: rgb(249, 110, 11);
         width: 70%;
+        height: 60%;
         left: 0;
         display: flex;
         justify-content: space-evenly;
@@ -216,6 +219,7 @@ html {
         bottom: 0;
         background: rgb(249, 110, 11);
         width: 70%;
+        height: 60%;
         left: 0;
         display: flex;
         justify-content: space-evenly;
